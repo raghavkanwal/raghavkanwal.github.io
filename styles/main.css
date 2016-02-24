@@ -1,3 +1,39 @@
+body{ 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header_container {
+	display:table;
+	height:100%;
+	width:100%;
+}
+
+.intro,.soon{
+	font-family: 'Roboto', sans-serif;
+	text-align:center; 
+	display:table-cell; 
+	width:100%; 
+	vertical-align: middle;
+}
+
+.soon { 
+	display:none;
+}
+
+/*.intro button {
+	margin:20px;
+	border-radius:5px;
+	outline: none;
+	border:none;
+	background:#CCC;
+	padding:8px 20px;
+	box-shadow:0px 0px 5px #231F20;
+}*/
+
 .header_container .logo_area h1{
     font-size:36px;
     color:#231F20;
