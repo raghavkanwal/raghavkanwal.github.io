@@ -103,6 +103,19 @@ div.clear { display:block; clear:both; }
     text-decoration:none;
 }
 
+.github_attribution a span{
+	color:black;
+	border-bottom:1px dashed;
+	padding-bottom:2px;
+    transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+}
+
+.github_attribution a:hover span{
+	color: #5D759A; 
+} 
+
 .footer_container {
     width: 90%;
     margin: 0;
