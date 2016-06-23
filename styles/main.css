@@ -75,6 +75,10 @@ div.clear { display:block; clear:both; }
 
 .body_container h3 {font-size:25px;margin-bottom:20px;border-left: 5px solid #FFCC99;padding-left: 15px;}
 
+.body_container p { color:#666; }
+
+.body_container h4 { line-height:26px; }
+
 .body_container p a { text-decoration: none; color: #5D759A; border-bottom:1px dashed; padding-bottom:2px; }
 
 .body_container h4 span.title {  font-size: 19px; border-bottom: 1px dashed; padding-bottom: 2px; transition:all 0.2s ease-in-out;
