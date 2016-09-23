@@ -397,3 +397,13 @@ svg {
 }
 
 /*# sourceMappingURL=style22.css.map */
+
+.low_warn { display:none;}
+
+@media all and (max-width:767px) {
+
+#main_container { display:none;}
+
+.low_warn { display:block;}
+
+}
