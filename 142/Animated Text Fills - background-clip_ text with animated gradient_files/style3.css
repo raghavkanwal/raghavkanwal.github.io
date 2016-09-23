@@ -1,0 +1,399 @@
+/* Main stuff */
+.box-with-text {
+  background-image: -webkit-linear-gradient(#e06084 50%, white 50%);
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-size: 100% 50px;
+  background-repeat: repeat;
+  -webkit-animation: stripes 1s linear infinite;
+  animation: stripes 1s linear infinite;
+  -webkit-text-fill-color: transparent; }
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
+/* Other stuff */
+/*.box-with-text {
+  text-align: center;
+  overflow: hidden;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font: 800 27em/1  'Open Sans', Impact;
+  margin-bottom: 100px; }
+*/
+/*# sourceMappingURL=style3.css.map */
+
+
+/* Main stuff */
+.text--transparent {
+  fill: transparent; }
+
+.anim-shape {
+  -webkit-transform-origin: 0x 150px;
+  transform-origin: 0x 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 3s infinite alternate;
+  animation: moving-panel 3s infinite alternate; }
+  .colortext .anim-shape:nth-child(1) {
+    fill: #0E1826; }
+  .colortext .anim-shape:nth-child(2) {
+    fill: #166973; }
+  .colortext .anim-shape:nth-child(3) {
+    fill: #65BFA6; }
+  .colortext .anim-shape:nth-child(4) {
+    fill: #F2CD5C; }
+  .colortext .anim-shape:nth-child(5) {
+    fill: #F26444; }
+
+.shadow {
+  -webkit-transform: translate(10px, 10px);
+  transform: translate(10px, 10px); }
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .2; }
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0); } }
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0); } }
+/* Other stuff */
+BODY {
+  background: #EEE; }
+
+.content {
+  font: 800 12.5em/1  'Open Sans', Impact; }
+
+svg {
+  width: 90%;
+  margin: 0 auto 50px;
+  display: block;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style17.css.map */
+
+
+/* Main stuff */
+.text2 {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear; }
+  .text2:nth-child(5n + 1) {
+    stroke: #F2385A;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s; }
+  .text2:nth-child(5n + 2) {
+    stroke: #F5A503;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s; }
+  .text2:nth-child(5n + 3) {
+    stroke: #E9F1DF;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s; }
+  .text2:nth-child(5n + 4) {
+    stroke: #56D9CD;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s; }
+  .text2:nth-child(5n + 5) {
+    stroke: #3AA1BF;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s; }
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400; } }
+/* Other stuff */
+HTML, BODY {
+  height: 100%; }
+
+BODY {
+  background: #111; }
+
+.content2 {
+  font: 800 14.5em/1  'Open Sans', Impact; }
+
+svg {
+  width: 100%;
+  margin: 0 auto 50px;
+  display: block;
+  text-transform: uppercase; }
+
+
+.text3 {
+  fill: url(#p-stars);
+  stroke: #C2C2C2;
+  stroke-width: 3; }
+
+/* Colorize & animate pattern */
+.g-stars polygon {
+  stroke-width: 0;
+  -webkit-animation: strokea 2s infinite;
+  animation: strokea 2s infinite; }
+  .g-stars polygon:nth-child(5n + 1) {
+    fill: #e06084;
+    stroke: #e06084;
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s; }
+  .g-stars polygon:nth-child(5n + 2) {
+    fill: #ddd;
+    stroke: #ddd;
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s; }
+  .g-stars polygon:nth-child(5n + 3) {
+    fill: #333;
+    stroke: #333;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s; }
+  .g-stars polygon:nth-child(5n + 4) {
+    fill: #aaa;
+    stroke: #aaa;
+    -webkit-animation-delay: -1.6s;
+    animation-delay: -1.6s; }
+  .g-stars polygon:nth-child(5n + 5) {
+    fill: #888;
+    stroke: #888;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s; }
+
+.content3 {
+  font: 800 14.5em/1  'Open Sans', Impact; }
+
+  /* Change stroke-width within animation */
+@-webkit-keyframes strokea {
+  50% {
+    stroke-width: 8; } }
+@keyframes strokea {
+  50% {
+    stroke-width: 8; } }
+
+    .box-with-text4 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  font: 800 16vmax/1 'Open Sans', Impact;
+  /* Hack to hide thin transparent lines while resize objects */ }
+  .box-with-text4:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0vmax 0vmax 10vmax 10vmax purple, 15vmax 0vmax 10vmax 10vmax violet, 30vmax 0vmax 10vmax 10vmax teal, 45vmax 0vmax 10vmax 10vmax orangered, 60vmax 0vmax 10vmax 10vmax yellow, 75vmax 0vmax 10vmax 10vmax crimson, 90vmax 0vmax 10vmax 10vmax yellowgreen, 105vmax 0vmax 10vmax 10vmax orange, 120vmax 0vmax 10vmax 10vmax darkturquoise, 135vmax 0vmax 10vmax 10vmax pink, 0vmax 15vmax 10vmax 10vmax steelblue, 15vmax 15vmax 10vmax 10vmax turquoise, 30vmax 15vmax 10vmax 10vmax coral, 45vmax 15vmax 10vmax 10vmax skyblue, 60vmax 15vmax 10vmax 10vmax darkviolet, 75vmax 15vmax 10vmax 10vmax gold, 90vmax 15vmax 10vmax 10vmax purple, 105vmax 15vmax 10vmax 10vmax violet, 120vmax 15vmax 10vmax 10vmax teal, 135vmax 15vmax 10vmax 10vmax orangered, 0vmax 30vmax 10vmax 10vmax yellow, 15vmax 30vmax 10vmax 10vmax crimson, 30vmax 30vmax 10vmax 10vmax yellowgreen, 45vmax 30vmax 10vmax 10vmax orange, 60vmax 30vmax 10vmax 10vmax darkturquoise, 75vmax 30vmax 10vmax 10vmax pink, 90vmax 30vmax 10vmax 10vmax steelblue, 105vmax 30vmax 10vmax 10vmax turquoise, 120vmax 30vmax 10vmax 10vmax coral, 135vmax 30vmax 10vmax 10vmax skyblue, 0vmax 45vmax 10vmax 10vmax darkviolet, 15vmax 45vmax 10vmax 10vmax gold, 30vmax 45vmax 10vmax 10vmax darkslateblue, 45vmax 45vmax 10vmax 10vmax purple, 60vmax 45vmax 10vmax 10vmax violet, 75vmax 45vmax 10vmax 10vmax teal, 90vmax 45vmax 10vmax 10vmax orangered, 105vmax 45vmax 10vmax 10vmax yellow, 120vmax 45vmax 10vmax 10vmax crimson, 135vmax 45vmax 10vmax 10vmax yellowgreen, 0vmax 60vmax 10vmax 10vmax orange, 15vmax 60vmax 10vmax 10vmax darkturquoise, 30vmax 60vmax 10vmax 10vmax pink, 45vmax 60vmax 10vmax 10vmax steelblue, 60vmax 60vmax 10vmax 10vmax turquoise, 75vmax 60vmax 10vmax 10vmax coral, 90vmax 60vmax 10vmax 10vmax skyblue, 105vmax 60vmax 10vmax 10vmax darkviolet, 120vmax 60vmax 10vmax 10vmax gold, 135vmax 60vmax 10vmax 10vmax darkslateblue;
+    -webkit-animation: shadows-cells 2.5s linear infinite;
+    animation: shadows-cells 2.5s linear infinite; }
+  .box-with-text4:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    display: block;
+    border: 4px solid #111; }
+
+.text4 {
+  position: relative;
+  display: block;
+  background: #111;
+  color: white;
+  mix-blend-mode: darken; }
+
+@-webkit-keyframes shadows-cells {
+  25% {
+    box-shadow: 0vmax 0vmax 10vmax 10vmax coral, 15vmax 0vmax 10vmax 10vmax skyblue, 30vmax 0vmax 10vmax 10vmax darkviolet, 45vmax 0vmax 10vmax 10vmax gold, 60vmax 0vmax 10vmax 10vmax purple, 75vmax 0vmax 10vmax 10vmax violet, 90vmax 0vmax 10vmax 10vmax teal, 105vmax 0vmax 10vmax 10vmax orangered, 120vmax 0vmax 10vmax 10vmax yellow, 135vmax 0vmax 10vmax 10vmax crimson, 0vmax 15vmax 10vmax 10vmax yellowgreen, 15vmax 15vmax 10vmax 10vmax orange, 30vmax 15vmax 10vmax 10vmax darkturquoise, 45vmax 15vmax 10vmax 10vmax pink, 60vmax 15vmax 10vmax 10vmax steelblue, 75vmax 15vmax 10vmax 10vmax turquoise, 90vmax 15vmax 10vmax 10vmax coral, 105vmax 15vmax 10vmax 10vmax skyblue, 120vmax 15vmax 10vmax 10vmax darkviolet, 135vmax 15vmax 10vmax 10vmax gold, 0vmax 30vmax 10vmax 10vmax darkslateblue, 15vmax 30vmax 10vmax 10vmax purple, 30vmax 30vmax 10vmax 10vmax violet, 45vmax 30vmax 10vmax 10vmax teal, 60vmax 30vmax 10vmax 10vmax orangered, 75vmax 30vmax 10vmax 10vmax yellow, 90vmax 30vmax 10vmax 10vmax crimson, 105vmax 30vmax 10vmax 10vmax yellowgreen, 120vmax 30vmax 10vmax 10vmax orange, 135vmax 30vmax 10vmax 10vmax darkturquoise, 0vmax 45vmax 10vmax 10vmax pink, 15vmax 45vmax 10vmax 10vmax steelblue, 30vmax 45vmax 10vmax 10vmax turquoise, 45vmax 45vmax 10vmax 10vmax coral, 60vmax 45vmax 10vmax 10vmax skyblue, 75vmax 45vmax 10vmax 10vmax darkviolet, 90vmax 45vmax 10vmax 10vmax gold, 105vmax 45vmax 10vmax 10vmax darkslateblue, 120vmax 45vmax 10vmax 10vmax purple, 135vmax 45vmax 10vmax 10vmax violet, 0vmax 60vmax 10vmax 10vmax teal, 15vmax 60vmax 10vmax 10vmax orangered, 30vmax 60vmax 10vmax 10vmax yellow, 45vmax 60vmax 10vmax 10vmax crimson, 60vmax 60vmax 10vmax 10vmax yellowgreen, 75vmax 60vmax 10vmax 10vmax orange, 90vmax 60vmax 10vmax 10vmax darkturquoise, 105vmax 60vmax 10vmax 10vmax pink, 120vmax 60vmax 10vmax 10vmax steelblue, 135vmax 60vmax 10vmax 10vmax turquoise; }
+  45% {
+    box-shadow: 0vmax 0vmax 10vmax 10vmax yellowgreen, 15vmax 0vmax 10vmax 10vmax orange, 30vmax 0vmax 10vmax 10vmax darkturquoise, 45vmax 0vmax 10vmax 10vmax pink, 60vmax 0vmax 10vmax 10vmax steelblue, 75vmax 0vmax 10vmax 10vmax turquoise, 90vmax 0vmax 10vmax 10vmax coral, 105vmax 0vmax 10vmax 10vmax skyblue, 120vmax 0vmax 10vmax 10vmax darkviolet, 135vmax 0vmax 10vmax 10vmax gold, 0vmax 15vmax 10vmax 10vmax purple, 15vmax 15vmax 10vmax 10vmax violet, 30vmax 15vmax 10vmax 10vmax teal, 45vmax 15vmax 10vmax 10vmax orangered, 60vmax 15vmax 10vmax 10vmax yellow, 75vmax 15vmax 10vmax 10vmax crimson, 90vmax 15vmax 10vmax 10vmax yellowgreen, 105vmax 15vmax 10vmax 10vmax orange, 120vmax 15vmax 10vmax 10vmax darkturquoise, 135vmax 15vmax 10vmax 10vmax pink, 0vmax 30vmax 10vmax 10vmax steelblue, 15vmax 30vmax 10vmax 10vmax turquoise, 30vmax 30vmax 10vmax 10vmax coral, 45vmax 30vmax 10vmax 10vmax skyblue, 60vmax 30vmax 10vmax 10vmax darkviolet, 75vmax 30vmax 10vmax 10vmax gold, 90vmax 30vmax 10vmax 10vmax darkslateblue, 105vmax 30vmax 10vmax 10vmax purple, 120vmax 30vmax 10vmax 10vmax violet, 135vmax 30vmax 10vmax 10vmax teal, 0vmax 45vmax 10vmax 10vmax orangered, 15vmax 45vmax 10vmax 10vmax yellow, 30vmax 45vmax 10vmax 10vmax crimson, 45vmax 45vmax 10vmax 10vmax yellowgreen, 60vmax 45vmax 10vmax 10vmax orange, 75vmax 45vmax 10vmax 10vmax darkturquoise, 90vmax 45vmax 10vmax 10vmax pink, 105vmax 45vmax 10vmax 10vmax steelblue, 120vmax 45vmax 10vmax 10vmax turquoise, 135vmax 45vmax 10vmax 10vmax coral, 0vmax 60vmax 10vmax 10vmax skyblue, 15vmax 60vmax 10vmax 10vmax darkviolet, 30vmax 60vmax 10vmax 10vmax gold, 45vmax 60vmax 10vmax 10vmax darkslateblue, 60vmax 60vmax 10vmax 10vmax purple, 75vmax 60vmax 10vmax 10vmax violet, 90vmax 60vmax 10vmax 10vmax teal, 105vmax 60vmax 10vmax 10vmax orangered, 120vmax 60vmax 10vmax 10vmax yellow, 135vmax 60vmax 10vmax 10vmax crimson; }
+  75% {
+    box-shadow: 0vmax 0vmax 10vmax 10vmax teal, 15vmax 0vmax 10vmax 10vmax orangered, 30vmax 0vmax 10vmax 10vmax yellow, 45vmax 0vmax 10vmax 10vmax crimson, 60vmax 0vmax 10vmax 10vmax yellowgreen, 75vmax 0vmax 10vmax 10vmax orange, 90vmax 0vmax 10vmax 10vmax darkturquoise, 105vmax 0vmax 10vmax 10vmax pink, 120vmax 0vmax 10vmax 10vmax steelblue, 135vmax 0vmax 10vmax 10vmax turquoise, 0vmax 15vmax 10vmax 10vmax coral, 15vmax 15vmax 10vmax 10vmax skyblue, 30vmax 15vmax 10vmax 10vmax darkviolet, 45vmax 15vmax 10vmax 10vmax gold, 60vmax 15vmax 10vmax 10vmax darkslateblue, 75vmax 15vmax 10vmax 10vmax purple, 90vmax 15vmax 10vmax 10vmax violet, 105vmax 15vmax 10vmax 10vmax teal, 120vmax 15vmax 10vmax 10vmax orangered, 135vmax 15vmax 10vmax 10vmax yellow, 0vmax 30vmax 10vmax 10vmax crimson, 15vmax 30vmax 10vmax 10vmax yellowgreen, 30vmax 30vmax 10vmax 10vmax orange, 45vmax 30vmax 10vmax 10vmax darkturquoise, 60vmax 30vmax 10vmax 10vmax pink, 75vmax 30vmax 10vmax 10vmax steelblue, 90vmax 30vmax 10vmax 10vmax turquoise, 105vmax 30vmax 10vmax 10vmax coral, 120vmax 30vmax 10vmax 10vmax skyblue, 135vmax 30vmax 10vmax 10vmax darkviolet, 0vmax 45vmax 10vmax 10vmax gold, 15vmax 45vmax 10vmax 10vmax darkslateblue, 30vmax 45vmax 10vmax 10vmax purple, 45vmax 45vmax 10vmax 10vmax violet, 60vmax 45vmax 10vmax 10vmax teal, 75vmax 45vmax 10vmax 10vmax orangered, 90vmax 45vmax 10vmax 10vmax yellow, 105vmax 45vmax 10vmax 10vmax crimson, 120vmax 45vmax 10vmax 10vmax yellowgreen, 135vmax 45vmax 10vmax 10vmax orange, 0vmax 60vmax 10vmax 10vmax darkturquoise, 15vmax 60vmax 10vmax 10vmax pink, 30vmax 60vmax 10vmax 10vmax steelblue, 45vmax 60vmax 10vmax 10vmax turquoise, 60vmax 60vmax 10vmax 10vmax coral, 75vmax 60vmax 10vmax 10vmax skyblue, 90vmax 60vmax 10vmax 10vmax darkviolet, 105vmax 60vmax 10vmax 10vmax gold, 120vmax 60vmax 10vmax 10vmax darkslateblue, 135vmax 60vmax 10vmax 10vmax purple; } }
+@keyframes shadows-cells {
+  25% {
+    box-shadow: 0vmax 0vmax 10vmax 10vmax coral, 15vmax 0vmax 10vmax 10vmax skyblue, 30vmax 0vmax 10vmax 10vmax darkviolet, 45vmax 0vmax 10vmax 10vmax gold, 60vmax 0vmax 10vmax 10vmax purple, 75vmax 0vmax 10vmax 10vmax violet, 90vmax 0vmax 10vmax 10vmax teal, 105vmax 0vmax 10vmax 10vmax orangered, 120vmax 0vmax 10vmax 10vmax yellow, 135vmax 0vmax 10vmax 10vmax crimson, 0vmax 15vmax 10vmax 10vmax yellowgreen, 15vmax 15vmax 10vmax 10vmax orange, 30vmax 15vmax 10vmax 10vmax darkturquoise, 45vmax 15vmax 10vmax 10vmax pink, 60vmax 15vmax 10vmax 10vmax steelblue, 75vmax 15vmax 10vmax 10vmax turquoise, 90vmax 15vmax 10vmax 10vmax coral, 105vmax 15vmax 10vmax 10vmax skyblue, 120vmax 15vmax 10vmax 10vmax darkviolet, 135vmax 15vmax 10vmax 10vmax gold, 0vmax 30vmax 10vmax 10vmax darkslateblue, 15vmax 30vmax 10vmax 10vmax purple, 30vmax 30vmax 10vmax 10vmax violet, 45vmax 30vmax 10vmax 10vmax teal, 60vmax 30vmax 10vmax 10vmax orangered, 75vmax 30vmax 10vmax 10vmax yellow, 90vmax 30vmax 10vmax 10vmax crimson, 105vmax 30vmax 10vmax 10vmax yellowgreen, 120vmax 30vmax 10vmax 10vmax orange, 135vmax 30vmax 10vmax 10vmax darkturquoise, 0vmax 45vmax 10vmax 10vmax pink, 15vmax 45vmax 10vmax 10vmax steelblue, 30vmax 45vmax 10vmax 10vmax turquoise, 45vmax 45vmax 10vmax 10vmax coral, 60vmax 45vmax 10vmax 10vmax skyblue, 75vmax 45vmax 10vmax 10vmax darkviolet, 90vmax 45vmax 10vmax 10vmax gold, 105vmax 45vmax 10vmax 10vmax darkslateblue, 120vmax 45vmax 10vmax 10vmax purple, 135vmax 45vmax 10vmax 10vmax violet, 0vmax 60vmax 10vmax 10vmax teal, 15vmax 60vmax 10vmax 10vmax orangered, 30vmax 60vmax 10vmax 10vmax yellow, 45vmax 60vmax 10vmax 10vmax crimson, 60vmax 60vmax 10vmax 10vmax yellowgreen, 75vmax 60vmax 10vmax 10vmax orange, 90vmax 60vmax 10vmax 10vmax darkturquoise, 105vmax 60vmax 10vmax 10vmax pink, 120vmax 60vmax 10vmax 10vmax steelblue, 135vmax 60vmax 10vmax 10vmax turquoise; }
+  45% {
+    box-shadow: 0vmax 0vmax 10vmax 10vmax yellowgreen, 15vmax 0vmax 10vmax 10vmax orange, 30vmax 0vmax 10vmax 10vmax darkturquoise, 45vmax 0vmax 10vmax 10vmax pink, 60vmax 0vmax 10vmax 10vmax steelblue, 75vmax 0vmax 10vmax 10vmax turquoise, 90vmax 0vmax 10vmax 10vmax coral, 105vmax 0vmax 10vmax 10vmax skyblue, 120vmax 0vmax 10vmax 10vmax darkviolet, 135vmax 0vmax 10vmax 10vmax gold, 0vmax 15vmax 10vmax 10vmax purple, 15vmax 15vmax 10vmax 10vmax violet, 30vmax 15vmax 10vmax 10vmax teal, 45vmax 15vmax 10vmax 10vmax orangered, 60vmax 15vmax 10vmax 10vmax yellow, 75vmax 15vmax 10vmax 10vmax crimson, 90vmax 15vmax 10vmax 10vmax yellowgreen, 105vmax 15vmax 10vmax 10vmax orange, 120vmax 15vmax 10vmax 10vmax darkturquoise, 135vmax 15vmax 10vmax 10vmax pink, 0vmax 30vmax 10vmax 10vmax steelblue, 15vmax 30vmax 10vmax 10vmax turquoise, 30vmax 30vmax 10vmax 10vmax coral, 45vmax 30vmax 10vmax 10vmax skyblue, 60vmax 30vmax 10vmax 10vmax darkviolet, 75vmax 30vmax 10vmax 10vmax gold, 90vmax 30vmax 10vmax 10vmax darkslateblue, 105vmax 30vmax 10vmax 10vmax purple, 120vmax 30vmax 10vmax 10vmax violet, 135vmax 30vmax 10vmax 10vmax teal, 0vmax 45vmax 10vmax 10vmax orangered, 15vmax 45vmax 10vmax 10vmax yellow, 30vmax 45vmax 10vmax 10vmax crimson, 45vmax 45vmax 10vmax 10vmax yellowgreen, 60vmax 45vmax 10vmax 10vmax orange, 75vmax 45vmax 10vmax 10vmax darkturquoise, 90vmax 45vmax 10vmax 10vmax pink, 105vmax 45vmax 10vmax 10vmax steelblue, 120vmax 45vmax 10vmax 10vmax turquoise, 135vmax 45vmax 10vmax 10vmax coral, 0vmax 60vmax 10vmax 10vmax skyblue, 15vmax 60vmax 10vmax 10vmax darkviolet, 30vmax 60vmax 10vmax 10vmax gold, 45vmax 60vmax 10vmax 10vmax darkslateblue, 60vmax 60vmax 10vmax 10vmax purple, 75vmax 60vmax 10vmax 10vmax violet, 90vmax 60vmax 10vmax 10vmax teal, 105vmax 60vmax 10vmax 10vmax orangered, 120vmax 60vmax 10vmax 10vmax yellow, 135vmax 60vmax 10vmax 10vmax crimson; }
+  75% {
+    box-shadow: 0vmax 0vmax 10vmax 10vmax teal, 15vmax 0vmax 10vmax 10vmax orangered, 30vmax 0vmax 10vmax 10vmax yellow, 45vmax 0vmax 10vmax 10vmax crimson, 60vmax 0vmax 10vmax 10vmax yellowgreen, 75vmax 0vmax 10vmax 10vmax orange, 90vmax 0vmax 10vmax 10vmax darkturquoise, 105vmax 0vmax 10vmax 10vmax pink, 120vmax 0vmax 10vmax 10vmax steelblue, 135vmax 0vmax 10vmax 10vmax turquoise, 0vmax 15vmax 10vmax 10vmax coral, 15vmax 15vmax 10vmax 10vmax skyblue, 30vmax 15vmax 10vmax 10vmax darkviolet, 45vmax 15vmax 10vmax 10vmax gold, 60vmax 15vmax 10vmax 10vmax darkslateblue, 75vmax 15vmax 10vmax 10vmax purple, 90vmax 15vmax 10vmax 10vmax violet, 105vmax 15vmax 10vmax 10vmax teal, 120vmax 15vmax 10vmax 10vmax orangered, 135vmax 15vmax 10vmax 10vmax yellow, 0vmax 30vmax 10vmax 10vmax crimson, 15vmax 30vmax 10vmax 10vmax yellowgreen, 30vmax 30vmax 10vmax 10vmax orange, 45vmax 30vmax 10vmax 10vmax darkturquoise, 60vmax 30vmax 10vmax 10vmax pink, 75vmax 30vmax 10vmax 10vmax steelblue, 90vmax 30vmax 10vmax 10vmax turquoise, 105vmax 30vmax 10vmax 10vmax coral, 120vmax 30vmax 10vmax 10vmax skyblue, 135vmax 30vmax 10vmax 10vmax darkviolet, 0vmax 45vmax 10vmax 10vmax gold, 15vmax 45vmax 10vmax 10vmax darkslateblue, 30vmax 45vmax 10vmax 10vmax purple, 45vmax 45vmax 10vmax 10vmax violet, 60vmax 45vmax 10vmax 10vmax teal, 75vmax 45vmax 10vmax 10vmax orangered, 90vmax 45vmax 10vmax 10vmax yellow, 105vmax 45vmax 10vmax 10vmax crimson, 120vmax 45vmax 10vmax 10vmax yellowgreen, 135vmax 45vmax 10vmax 10vmax orange, 0vmax 60vmax 10vmax 10vmax darkturquoise, 15vmax 60vmax 10vmax 10vmax pink, 30vmax 60vmax 10vmax 10vmax steelblue, 45vmax 60vmax 10vmax 10vmax turquoise, 60vmax 60vmax 10vmax 10vmax coral, 75vmax 60vmax 10vmax 10vmax skyblue, 90vmax 60vmax 10vmax 10vmax darkviolet, 105vmax 60vmax 10vmax 10vmax gold, 120vmax 60vmax 10vmax 10vmax darkslateblue, 135vmax 60vmax 10vmax 10vmax purple; } }
+
+
+.svg-inverted-mask5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; }
+
+.mask__shape5 {
+  fill: white; }
+
+.box-with-text5 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding-top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* Hide the line */ }
+  .box-with-text5:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*border: 2px solid #fde8b9; */
+    }
+
+ .box-with-text5.text-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: hidden; }
+
+.shape--fill {
+  /*fill: #fde8b9; */
+  fill : #111;
+}
+
+/* Transparent copy of text to keep patterned text selectable */
+.text--transparent {
+  fill: transparent; }
+
+/* Function for getting colors from list if we need quantity of colors more than colors in array  */
+/* Function for creating multiple box-shadow */
+/* Element with animated shadows */
+.shadows5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1vmax;
+  height: 1vmax;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2vmax purple, 0 0 0 4vmax crimson, 0 0 0 6vmax red, 0 0 0 8vmax orangered, 0 0 0 10vmax tomato, 0 0 0 12vmax gold, 0 0 0 14vmax yellow, 0 0 0 16vmax yellowgreen, 0 0 0 18vmax turquoise, 0 0 0 20vmax royalblue, 0 0 0 22vmax mediumslateblue, 0 0 0 24vmax mediumorchid, 0 0 0 26vmax purple, 0 0 0 28vmax crimson, 0 0 0 30vmax red, 0 0 0 32vmax orangered, 0 0 0 34vmax tomato, 0 0 0 36vmax gold, 0 0 0 38vmax yellow, 0 0 0 40vmax yellowgreen, 0 0 0 42vmax turquoise, 0 0 0 44vmax royalblue, 0 0 0 46vmax mediumslateblue, 0 0 0 48vmax mediumorchid, 0 0 0 50vmax darkviolet, 0 0 0 52vmax purple, 0 0 0 54vmax crimson, 0 0 0 56vmax red, 0 0 0 58vmax orangered, 0 0 0 60vmax tomato, 0 0 0 62vmax gold, 0 0 0 64vmax yellow, 0 0 0 66vmax yellowgreen, 0 0 0 68vmax turquoise, 0 0 0 70vmax royalblue, 0 0 0 72vmax mediumslateblue, 0 0 0 74vmax mediumorchid, 0 0 0 76vmax darkviolet, 0 0 0 78vmax purple, 0 0 0 80vmax crimson, 0 0 0 82vmax red, 0 0 0 84vmax orangered, 0 0 0 86vmax tomato, 0 0 0 88vmax gold, 0 0 0 90vmax yellow;
+  -webkit-animation: shadows-move 4s linear infinite;
+  animation: shadows-move 4s linear infinite; }
+
+@-webkit-keyframes shadows-move {
+  25% {
+    box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue, 0 0 0 6vmax mediumorchid, 0 0 0 8vmax purple, 0 0 0 10vmax crimson, 0 0 0 12vmax red, 0 0 0 14vmax orangered, 0 0 0 16vmax tomato, 0 0 0 18vmax gold, 0 0 0 20vmax yellow, 0 0 0 22vmax yellowgreen, 0 0 0 24vmax turquoise, 0 0 0 26vmax royalblue, 0 0 0 28vmax mediumslateblue, 0 0 0 30vmax mediumorchid, 0 0 0 32vmax darkviolet, 0 0 0 34vmax purple, 0 0 0 36vmax crimson, 0 0 0 38vmax red, 0 0 0 40vmax orangered, 0 0 0 42vmax tomato, 0 0 0 44vmax gold, 0 0 0 46vmax yellow, 0 0 0 48vmax yellowgreen, 0 0 0 50vmax turquoise, 0 0 0 52vmax royalblue, 0 0 0 54vmax mediumslateblue, 0 0 0 56vmax mediumorchid, 0 0 0 58vmax darkviolet, 0 0 0 60vmax purple, 0 0 0 62vmax crimson, 0 0 0 64vmax red, 0 0 0 66vmax orangered, 0 0 0 68vmax tomato, 0 0 0 70vmax gold, 0 0 0 72vmax yellow, 0 0 0 74vmax yellowgreen, 0 0 0 76vmax turquoise, 0 0 0 78vmax royalblue, 0 0 0 80vmax mediumslateblue, 0 0 0 82vmax mediumorchid, 0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson, 0 0 0 90vmax red; }
+  45% {
+    box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen, 0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue, 0 0 0 12vmax mediumorchid, 0 0 0 14vmax purple, 0 0 0 16vmax crimson, 0 0 0 18vmax red, 0 0 0 20vmax orangered, 0 0 0 22vmax tomato, 0 0 0 24vmax gold, 0 0 0 26vmax yellow, 0 0 0 28vmax yellowgreen, 0 0 0 30vmax turquoise, 0 0 0 32vmax royalblue, 0 0 0 34vmax mediumslateblue, 0 0 0 36vmax mediumorchid, 0 0 0 38vmax darkviolet, 0 0 0 40vmax purple, 0 0 0 42vmax crimson, 0 0 0 44vmax red, 0 0 0 46vmax orangered, 0 0 0 48vmax tomato, 0 0 0 50vmax gold, 0 0 0 52vmax yellow, 0 0 0 54vmax yellowgreen, 0 0 0 56vmax turquoise, 0 0 0 58vmax royalblue, 0 0 0 60vmax mediumslateblue, 0 0 0 62vmax mediumorchid, 0 0 0 64vmax darkviolet, 0 0 0 66vmax purple, 0 0 0 68vmax crimson, 0 0 0 70vmax red, 0 0 0 72vmax orangered, 0 0 0 74vmax tomato, 0 0 0 76vmax gold, 0 0 0 78vmax yellow, 0 0 0 80vmax yellowgreen, 0 0 0 82vmax turquoise, 0 0 0 84vmax royalblue, 0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid, 0 0 0 90vmax darkviolet; }
+  75% {
+    box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold, 0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise, 0 0 0 14vmax royalblue, 0 0 0 16vmax mediumslateblue, 0 0 0 18vmax mediumorchid, 0 0 0 20vmax purple, 0 0 0 22vmax crimson, 0 0 0 24vmax red, 0 0 0 26vmax orangered, 0 0 0 28vmax tomato, 0 0 0 30vmax gold, 0 0 0 32vmax yellow, 0 0 0 34vmax yellowgreen, 0 0 0 36vmax turquoise, 0 0 0 38vmax royalblue, 0 0 0 40vmax mediumslateblue, 0 0 0 42vmax mediumorchid, 0 0 0 44vmax darkviolet, 0 0 0 46vmax purple, 0 0 0 48vmax crimson, 0 0 0 50vmax red, 0 0 0 52vmax orangered, 0 0 0 54vmax tomato, 0 0 0 56vmax gold, 0 0 0 58vmax yellow, 0 0 0 60vmax yellowgreen, 0 0 0 62vmax turquoise, 0 0 0 64vmax royalblue, 0 0 0 66vmax mediumslateblue, 0 0 0 68vmax mediumorchid, 0 0 0 70vmax darkviolet, 0 0 0 72vmax purple, 0 0 0 74vmax crimson, 0 0 0 76vmax red, 0 0 0 78vmax orangered, 0 0 0 80vmax tomato, 0 0 0 82vmax gold, 0 0 0 84vmax yellow, 0 0 0 86vmax yellowgreen, 0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue; } }
+@keyframes shadows-move {
+  25% {
+    box-shadow: 0 0 0 2vmax royalblue, 0 0 0 4vmax mediumslateblue, 0 0 0 6vmax mediumorchid, 0 0 0 8vmax purple, 0 0 0 10vmax crimson, 0 0 0 12vmax red, 0 0 0 14vmax orangered, 0 0 0 16vmax tomato, 0 0 0 18vmax gold, 0 0 0 20vmax yellow, 0 0 0 22vmax yellowgreen, 0 0 0 24vmax turquoise, 0 0 0 26vmax royalblue, 0 0 0 28vmax mediumslateblue, 0 0 0 30vmax mediumorchid, 0 0 0 32vmax darkviolet, 0 0 0 34vmax purple, 0 0 0 36vmax crimson, 0 0 0 38vmax red, 0 0 0 40vmax orangered, 0 0 0 42vmax tomato, 0 0 0 44vmax gold, 0 0 0 46vmax yellow, 0 0 0 48vmax yellowgreen, 0 0 0 50vmax turquoise, 0 0 0 52vmax royalblue, 0 0 0 54vmax mediumslateblue, 0 0 0 56vmax mediumorchid, 0 0 0 58vmax darkviolet, 0 0 0 60vmax purple, 0 0 0 62vmax crimson, 0 0 0 64vmax red, 0 0 0 66vmax orangered, 0 0 0 68vmax tomato, 0 0 0 70vmax gold, 0 0 0 72vmax yellow, 0 0 0 74vmax yellowgreen, 0 0 0 76vmax turquoise, 0 0 0 78vmax royalblue, 0 0 0 80vmax mediumslateblue, 0 0 0 82vmax mediumorchid, 0 0 0 84vmax darkviolet, 0 0 0 86vmax purple, 0 0 0 88vmax crimson, 0 0 0 90vmax red; }
+  45% {
+    box-shadow: 0 0 0 2vmax yellow, 0 0 0 4vmax yellowgreen, 0 0 0 6vmax turquoise, 0 0 0 8vmax royalblue, 0 0 0 10vmax mediumslateblue, 0 0 0 12vmax mediumorchid, 0 0 0 14vmax purple, 0 0 0 16vmax crimson, 0 0 0 18vmax red, 0 0 0 20vmax orangered, 0 0 0 22vmax tomato, 0 0 0 24vmax gold, 0 0 0 26vmax yellow, 0 0 0 28vmax yellowgreen, 0 0 0 30vmax turquoise, 0 0 0 32vmax royalblue, 0 0 0 34vmax mediumslateblue, 0 0 0 36vmax mediumorchid, 0 0 0 38vmax darkviolet, 0 0 0 40vmax purple, 0 0 0 42vmax crimson, 0 0 0 44vmax red, 0 0 0 46vmax orangered, 0 0 0 48vmax tomato, 0 0 0 50vmax gold, 0 0 0 52vmax yellow, 0 0 0 54vmax yellowgreen, 0 0 0 56vmax turquoise, 0 0 0 58vmax royalblue, 0 0 0 60vmax mediumslateblue, 0 0 0 62vmax mediumorchid, 0 0 0 64vmax darkviolet, 0 0 0 66vmax purple, 0 0 0 68vmax crimson, 0 0 0 70vmax red, 0 0 0 72vmax orangered, 0 0 0 74vmax tomato, 0 0 0 76vmax gold, 0 0 0 78vmax yellow, 0 0 0 80vmax yellowgreen, 0 0 0 82vmax turquoise, 0 0 0 84vmax royalblue, 0 0 0 86vmax mediumslateblue, 0 0 0 88vmax mediumorchid, 0 0 0 90vmax darkviolet; }
+  75% {
+    box-shadow: 0 0 0 2vmax orangered, 0 0 0 4vmax tomato, 0 0 0 6vmax gold, 0 0 0 8vmax yellow, 0 0 0 10vmax yellowgreen, 0 0 0 12vmax turquoise, 0 0 0 14vmax royalblue, 0 0 0 16vmax mediumslateblue, 0 0 0 18vmax mediumorchid, 0 0 0 20vmax purple, 0 0 0 22vmax crimson, 0 0 0 24vmax red, 0 0 0 26vmax orangered, 0 0 0 28vmax tomato, 0 0 0 30vmax gold, 0 0 0 32vmax yellow, 0 0 0 34vmax yellowgreen, 0 0 0 36vmax turquoise, 0 0 0 38vmax royalblue, 0 0 0 40vmax mediumslateblue, 0 0 0 42vmax mediumorchid, 0 0 0 44vmax darkviolet, 0 0 0 46vmax purple, 0 0 0 48vmax crimson, 0 0 0 50vmax red, 0 0 0 52vmax orangered, 0 0 0 54vmax tomato, 0 0 0 56vmax gold, 0 0 0 58vmax yellow, 0 0 0 60vmax yellowgreen, 0 0 0 62vmax turquoise, 0 0 0 64vmax royalblue, 0 0 0 66vmax mediumslateblue, 0 0 0 68vmax mediumorchid, 0 0 0 70vmax darkviolet, 0 0 0 72vmax purple, 0 0 0 74vmax crimson, 0 0 0 76vmax red, 0 0 0 78vmax orangered, 0 0 0 80vmax tomato, 0 0 0 82vmax gold, 0 0 0 84vmax yellow, 0 0 0 86vmax yellowgreen, 0 0 0 88vmax turquoise, 0 0 0 90vmax royalblue; } }
+/* Other stuff */
+
+
+/*body {
+  background: #fde8b9; }*/
+
+.svg-defs5 {
+  width: 0;
+  height: 0; }
+
+.wrap5 {
+  width: 100%;
+  position: relative;
+  font: 800 9.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  padding: 80px 0; 
+  margin-bottom:120px;
+}
+
+
+/************
+
+6
+
+
+************/
+
+/* Main stuff */
+.mask__shape6 {
+  fill: white; }
+
+.shape--fill6 {
+  fill: #111; }
+
+.text--transparent6 {
+  fill: transparent; }
+
+.box-with-text6 {
+  position: absolute;
+  top: 50%;
+  left:20%;
+  width: 100%;
+  padding-top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.text-fill6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: hidden; }
+
+.video6 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+/* Other stuff */
+/*body {
+  background: #000;
+  color: #fff; }*/
+
+.svg-defs6 {
+  width: 0;
+  height: 0; }
+
+.svg-inverted-mask6{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; }
+
+.wrap6 {
+  width: 100%;
+  position: relative;
+  font: 800 9.5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+  padding: 80px 0;
+  -webkit-transform: translate3d(0,0,0);
+
+}
+
+/*# sourceMappingURL=style22.css.map */
