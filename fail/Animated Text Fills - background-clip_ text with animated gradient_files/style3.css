@@ -407,3 +407,11 @@ svg {
 .low_warn { display:block;}
 
 }
+
+@media all and (max-width:767px) {
+
+#main_container { display:none;}
+
+.low_warn { display:block;}
+
+}
