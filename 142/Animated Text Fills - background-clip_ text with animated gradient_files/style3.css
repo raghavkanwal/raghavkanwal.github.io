@@ -400,7 +400,7 @@ svg {
 
 .low_warn { display:none;}
 
-@media all and (max-width:767px) {
+@media screen and (max-width:767px) {
 
 #main_container { display:none;}
 
