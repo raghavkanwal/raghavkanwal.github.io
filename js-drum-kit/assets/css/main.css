@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background: url(../images/background.jpg);
+    background-size: cover;
+}
+
+.buttons_container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons_container .button {
+    width: 100px;
+    text-align: center;
+    margin: 0 20px;
+    border: 3px solid #CCC;
+    padding:15px 5px;
+    background:rgba(255,255,255,.4);
+    cursor:pointer;
+}
+
+.buttons_container .button span.button_key{
+	display:block;
+	font-size:30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+}
+
+.buttons_container .button span.sound_name{
+	text-transform: uppercase;
+	font-size:13px;
+	font-family: 'Arima Madurai', cursive;
+	margin-top:20px;
+}
+
+.buttons_container .button.playing {
+	box-shadow:0 0 5px #BADA55;
+	transform:scale(1.1);
+	background:rgba(255,255,255,1);
+	border-color:#BADA55;
+}
+
+.buttons_container .button {
+	transition:all 0.1s ease-in-out;
+}
