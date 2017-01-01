@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Drum Kit</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Roboto" rel="stylesheet">
+</head>
+<body>
+
+<div class="buttons_container">
+	<div class="button" data-key="65">
+		<span class="button_key">A</span>
+		<span class="sound_name">Boom</span>
+	</div>
+	<div class="button" data-key="83">
+		<span class="button_key">S</span>
+		<span class="sound_name">clap</span>
+	</div>
+	<div class="button" data-key="68">
+		<span class="button_key">D</span>
+		<span class="sound_name">hihat</span>
+	</div>
+	<div class="button" data-key="70">
+		<span class="button_key">F</span>
+		<span class="sound_name">kick</span>
+	</div>
+	<div class="button" data-key="71">
+		<span class="button_key">G</span>
+		<span class="sound_name">openhat</span>
+	</div>
+	<div class="button" data-key="72">
+		<span class="button_key">H</span>
+		<span class="sound_name">ride</span>
+	</div>
+	<div class="button" data-key="74">
+		<span class="button_key">J</span>
+		<span class="sound_name">snare</span>
+	</div>
+	<div class="button" data-key="75">
+		<span class="button_key">K</span>
+		<span class="sound_name">tink</span>
+	</div>
+	<div class="button" data-key="76">
+		<span class="button_key">L</span>
+		<span class="sound_name">tom</span>
+	</div>
+</div>
+
+<div class="audio_container">
+	<audio src="assets/audio/boom.wav" data-key="65"></audio>
+	<audio src="assets/audio/clap.wav" data-key="83"></audio>
+	<audio src="assets/audio/hihat.wav" data-key="68"></audio>
+	<audio src="assets/audio/kick.wav" data-key="70"></audio>
+	<audio src="assets/audio/openhat.wav" data-key="71"></audio>
+	<audio src="assets/audio/ride.wav" data-key="72"></audio>
+	<audio src="assets/audio/snare.wav" data-key="74"></audio>
+	<audio src="assets/audio/tink.wav" data-key="75"></audio>
+	<audio src="assets/audio/tom.wav" data-key="76"></audio>
+</div>
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
