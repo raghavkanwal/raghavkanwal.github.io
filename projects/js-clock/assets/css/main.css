@@ -8,7 +8,7 @@
 	transition-timing-function: cubic-bezier(0.09,-0.01, 0.99, 1.47);
 }
 
-.hour-hand {width: 80px;transform-origin: 120px -3px;}
+.hour-hand {width: 80px;transform-origin: 120px -33px;}
 .minute-hand {width: 130px;transform-origin: 100%;left: 30px;}
 .second-hand {width: 110px;left: 50px;transform-origin: 100%;}
 
