@@ -1,7 +1,7 @@
 var items = document.querySelectorAll(".gallery-item");
 
 function toggleOpen(e) {
-	items.forEach(function(elem,index){
+	items.forEach(function(elem,index){ 
 		elem.classList.remove('selected');
 	})
 	this.classList.toggle('selected');
