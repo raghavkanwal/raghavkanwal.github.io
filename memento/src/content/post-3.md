@@ -6,7 +6,7 @@ path: "/blog/code-example"
 ---
 
 ## An Code example with PrismJS
-Gatsby-Starter-Julia uses the Atom Editor Theme.
+This site uses the Atom Editor Theme.
 
 ```js
 console.log("Hello World");

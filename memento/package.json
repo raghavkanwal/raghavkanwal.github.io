@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-julia",
+  "name": "memento",
   "private": true,
-  "description": "A minimal blog template built with Gatsby",
+  "description": "A personal blog/website",
   "version": "0.1.0",
-  "author": "Niklas Metje <hi@niklasmtj.de>",
+  "author": "Raghav kanwal <raghav.kanwal@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
